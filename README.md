@@ -12,12 +12,14 @@ GitHub 地址: https://github.com/OrangeX4/hsnips
 **使用这个插件前, 请把原来的 HyperSnips 插件删除!**
 **使用这个插件前, 请把原来的 HyperSnips 插件删除!**
 
-并且 **开启** 在 markdown 下的 **自动补全提示**, 请使用 `Shift + Ctrl + P` 然后输入 `open settings json` 打开配置文件, 然后加入以下部分:
+并且 **开启** 在 markdown 下的 **自动补全提示**, 请使用 `Shift + Ctrl + P` 然后输入 `open User settings json` 打开配置文件, 然后加入以下部分:
 
 ```json
 "[markdown]": {
-    "editor.quickSuggestions": true
-},
+        "editor.quickSuggestions":{ 
+        "strings": true
+    }
+    },
 ```
 
 **安装完成后**, 按下快捷键 `Ctrl + Shift + P`, 输入命令 `Open Snippets Directory`, 就可以打开一个文件夹. 在 **该文件夹** 新建一个文件 `markdown.hsnips`, 并将 [OrangeX4's hsnips](https://github.com/OrangeX4/OrangeX4-HyperSnips/blob/main/markdown.hsnips) 里面的内容输入进去, 保存, 就可以使用了.
